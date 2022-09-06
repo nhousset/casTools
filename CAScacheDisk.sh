@@ -1,1 +1,1 @@
-python cas_cache_disk.py $1
+python py/cas_cache_disk.py $1
