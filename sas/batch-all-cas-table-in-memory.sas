@@ -4,7 +4,7 @@ cas adminsession;
 proc cas;
 /* need to be a super user */
 accessControl.assumeRole / adminRole="superuser";
-accessControl.accessPersonalCaslibs;table.caslibinfo result=fileresult / caslib="CASDATA", showHidden=false, verbose=true,active=true; 
+accessControl.accessPersonalCaslibs;table.caslibinfo result=fileresult / caslib="PUBLIC", showHidden=false, verbose=true,active=true; 
 casliblist=findtable(fileresult);
  
 /* loop caslibs */
