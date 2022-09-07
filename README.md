@@ -18,3 +18,10 @@ Exemple de fichier authinfo :
 host serveur.viya.com port 5570 username user01 password !s3cret
 ````
 
+### Verifier le status de CAS
+
+Ce script python permet de vérifier l’état du CAS Controller. Le programme python tente une connexion et affiche son statut en fonction de la réussite ou de l’échec de cette connexion. 
+
+```
+casup.sh viya.sas 5570 /opt/sas/.authinfo
+```
