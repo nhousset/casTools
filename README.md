@@ -32,6 +32,8 @@ Copiez et collez le mot de passe SAS004 dans le fichier .authinfo. Le mot de pas
 default user MyName password {SAS004}11EF1B08B31C406FEF5D3B00A0354302DE1F1F5D84181C93
 ```
 
+
+
 ## Outils disponibles
 
 ### Verifier le status de CAS
