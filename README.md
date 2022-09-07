@@ -39,5 +39,5 @@ default user MyName password {SAS004}11EF1B08B31C406FEF5D3B00A0354302DE1F1F5D841
 Ce script python permet de vérifier l’état du CAS Controller. Le programme python tente une connexion et affiche son statut en fonction de la réussite ou de l’échec de cette connexion. 
 
 ```
-casup.sh viya.sas 5570 /opt/sas/.authinfo
+casup.sh viya.sas 5570 
 ```
