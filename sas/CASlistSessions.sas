@@ -1,3 +1,5 @@
+options set=CASCLIENTDEBUG=1;
+
 cas adminsession;
 proc cas;
     accessControl.assumeRole / adminRole="superuser";
