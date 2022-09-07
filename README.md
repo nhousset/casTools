@@ -15,8 +15,24 @@ Sous Linux, le fichier est nommé .authinfo. Le format de la ligne dans le fichi
 Exemple de fichier authinfo :
 
 ```
-host serveur.viya.com port 5570 username user01 password !s3cret
+default user <user01> password <mot-de-passe>
 ````
+
+### Encoder le mot de passe Authinfo à l'aide de PROC PWENCODE
+Utilisez le PROC PWENCODE pour créer un mot de passe codé. Dans cet exemple, nous utilisons la méthode d'encodage SAS004.
+
+```
+proc pwencode in='mot-de-passe' method=sas004;  
+run;
+```
+
+Copiez et collez le mot de passe SAS004 dans le fichier .authinfo. Le mot de passe pour le contenu du fichier .authinfo ressemble à ce qui suit :
+
+```
+default user MyName password {SAS004}11EF1B08B31C406FEF5D3B00A0354302DE1F1F5D84181C93
+```
+
+## Contrôle disponibles
 
 ### Verifier le status de CAS
 
